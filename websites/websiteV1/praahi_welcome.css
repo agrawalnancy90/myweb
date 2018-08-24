@@ -1,0 +1,148 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  background-color:rgb(255, 255, 255);
+  /*background-image: -moz-radial-gradient(50% 50%, ellipse cover, rgb(255, 255, 255), #000030 100%);
+  background-image: -webkit-radial-gradient(50% 50%, ellipse cover, rgb(255, 255, 255), #000030 100%);
+  background-image: -o-radial-gradient(50% 50%, ellipse cover, rgb(255, 255, 255), #000030 100%);
+  background-image: -ms-radial-gradient(50% 50%, ellipse cover, rgb(255, 255, 255), #000030 100%);
+  background-image: radial-gradient(50% 50%, ellipse cover, rgb(255, 255, 255), #000030 100%);*/
+  font-family: "Open Sans";
+}
+
+header {
+  background-color: rgba(0,0,0,0.8);
+  position: absolute;
+  height: 80px;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+}
+
+header h1 {
+  margin-left: 20px;
+  line-height: 25px;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  color: #fff;
+}
+
+#wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+#wrap p {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: rgba(255,255,255,.5);
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+#nokey {
+  background-color: #2EC4B6;
+  width: 100%;
+  height: 50%;
+}
+
+
+#header_menu {
+  position: absolute;
+  right: 2%;
+  top: 30%;
+  font: 15px arial, sans-serif;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111111;
+}
+
+.ball {
+  pointer-events: none;
+  position: absolute; 
+  width: 10px;
+  height: 10px;
+  border-radius: 50%; 
+  background: gray;
+  animation: implode 1s ease-in-out;
+  animation-fill-mode: both;
+  opacity: .5;
+}
+
+.header_logo {
+  position: absolute;
+  left: 2%;
+  width:100px;
+  height:120px;
+}
+
+.header_link {
+  color: white;
+}
+
+@keyframes implode {
+  100% {transform: scale(0)}
+}

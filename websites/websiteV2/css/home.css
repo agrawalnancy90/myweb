@@ -1,0 +1,103 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  background-color:rgb(255, 255, 255);
+  background-image: -moz-radial-gradient(50% 50%, ellipse cover, rgb(255, 255, 255), #000030 100%);
+  background-image: -webkit-radial-gradient(50% 50%, ellipse cover, rgb(255, 255, 255), #000030 100%);
+  background-image: -o-radial-gradient(50% 50%, ellipse cover, rgb(255, 255, 255), #000030 100%);
+  background-image: -ms-radial-gradient(50% 50%, ellipse cover, rgb(255, 255, 255), #000030 100%);
+  background-image: radial-gradient(50% 50%, ellipse cover, rgb(255, 255, 255), #000030 100%);
+  font-family: "Open Sans";
+}
+
+header {
+  background-color: rgba(0,0,0,0.8);
+  position: absolute;
+  height: 80px;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+}
+
+header h1 {
+  margin-left: 20px;
+  line-height: 25px;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  color: #fff;
+}
+
+#header_menu {
+  position: absolute;
+  right: 2%;
+  top: 15%;
+  opacity: 0.8;
+  font: 15px arial, sans-serif;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
+
+#nokey {
+  width: 100%;
+  height: 50%;
+}
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.8);
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111111;
+}
+
+.header_logo {
+  position: absolute;
+  left: 2%;
+  width:100px;
+  height:120px;
+}
+
+.header_link {
+  color: white;
+}
+
+@keyframes implode {
+  100% {transform: scale(0)}
+}

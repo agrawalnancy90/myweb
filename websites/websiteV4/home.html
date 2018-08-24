@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="architecture, architects, graphics, logo, design, art, poster" />
+
+	<title>Praahi Designs</title>
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/home.css">
+	<link rel="stylesheet" type="text/css" href="css/style_common.css" />
+    <link rel="stylesheet" type="text/css" href="css/style1.css" />
+
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/footer-distributed-with-address-and-phones.css">
+	
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
+	<script type="text/javascript" src="js/modernizr.custom.69142.js"></script>
+</head>
+
+<body>
+	<div id="main_container">
+		<div id="logo_animation">
+			<video width="320" height="240" autoplay muted loop>
+  				<source src="videos/logo_anim1.mp4" type="video/mp4">
+  				<img src="images/logo_template.png">
+			</video>
+		</div>
+
+		<div id="header">
+			<div class="align_center">
+	          <a href="#">Home</a>
+	          <a href="portfolio.html">Portfolio</a>
+	          <a href="team.html">Team</a>
+	          <a href="blog.html">Blog</a>
+	          <a href="testimonials.html">Testimonials</a>
+	          <a href="contact.html">Contact</a>
+        	</div>
+		</div>
+
+		<div id="content" class="content">
+			<div class="container">
+	            <div id="grid" class="main">
+					<div class="view">
+						<div class="view-back">
+							<span data-icon="A">566</span>
+							<span data-icon="B">124</span>
+							<a href="architecture.html">&rarr;</a>
+						</div>
+						<img src="images/architecture_thumbnail_simpl.jpg" />
+					</div>
+					<div class="view">
+						<div class="view-back">
+							<span data-icon="A">210</span>
+							<span data-icon="B">102</span>
+							<a href="graphic.html">&rarr;</a>
+						</div>
+						<img src="images/graphic_design_thumbnail.jpg" />
+					</div>
+					<div class="view">
+						<div class="view-back">
+							<span data-icon="A">690</span>
+							<span data-icon="B">361</span>
+							<a href="interior.html">&rarr;</a>
+						</div>
+						<img src="images/interior_design_thumbnail.png" />
+					</div>
+				</div>
+        	</div>
+			<script type="text/javascript">	
+				
+				Modernizr.load({
+					test: Modernizr.csstransforms3d && Modernizr.csstransitions,
+					yep : ['http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js','js/jquery.hoverfold.js'],
+					nope: 'css/fallback.css',
+					callback : function( url, result, key ) {
+							
+						if( url === 'js/jquery.hoverfold.js' ) {
+					$( '#grid' ).hoverfold();
+						}
+
+					}
+				});
+					
+			</script>
+		</div>
+
+		<div id="footer">
+			<footer class="footer-distributed">
+				<div class="footer-left">
+					<img src="images/logo_template.png" id="logo_footer">
+					<!-- <h3>Company<span>logo</span></h3> -->
+
+					<p class="footer-links">
+						<a href="#">Home</a>
+						·
+						<a href="portfolio.html">Portfolio</a>
+						·
+						<a href="team.html">Team</a>
+						·
+						<a href="blog.html">Blog</a>
+						·
+						<a href="testimonials.html">Testimonials</a>
+						·
+						<a href="contact.html">Contact</a>
+					</p>
+
+					<p class="footer-company-name">Praahi Designs &copy; 2018</p>
+				</div>
+
+				<div class="footer-center">
+					<div>
+						<i class="fa fa-map-marker"></i>
+						<p><span>21 Revolution Street</span> New Delhi, India</p>
+					</div>
+
+					<div>
+						<i class="fa fa-phone"></i>
+						<p>+91 555 123456</p>
+					</div>
+
+					<div>
+						<i class="fa fa-envelope"></i>
+						<p><a href="mailto:praahistudio@gmail.com">praahistudio@gmail.com</a></p>
+					</div>
+				</div>
+				<div class="footer-right">
+					<p class="footer-company-about">
+						<span>About the company</span>
+						Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+					</p>
+					<div class="footer-icons">
+						<a href="https://www.facebook.com/praahidesigns"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-linkedin"></i></a>
+						<a href="#"><i class="fa fa-github"></i></a>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+</body>
+</html>
